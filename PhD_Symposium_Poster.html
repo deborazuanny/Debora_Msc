@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhD Research Poster - Are Genera Evolutionarily Real?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            color: #333;
+        }
+
+        .poster {
+            width: 210mm;
+            height: 297mm;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            padding: 20mm;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            background: linear-gradient(90deg, #003366 0%, #004d99 100%);
+            color: white;
+            padding: 15mm;
+            border-radius: 8px;
+            margin-bottom: 12mm;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-title {
+            font-size: 28pt;
+            font-weight: 700;
+            margin-bottom: 4mm;
+            line-height: 1.3;
+        }
+
+        .header-subtitle {
+            font-size: 12pt;
+            font-style: italic;
+            opacity: 0.95;
+            margin-bottom: 3mm;
+        }
+
+        .header-institution {
+            font-size: 11pt;
+            opacity: 0.9;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10mm;
+            flex-grow: 1;
+            margin-bottom: 10mm;
+        }
+
+        .section {
+            background: white;
+            padding: 10mm;
+            border-radius: 6px;
+            border-left: 4px solid #003366;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            font-size: 14pt;
+            font-weight: 700;
+            color: #003366;
+            margin-bottom: 5mm;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .section-content {
+            font-size: 10pt;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .section-content p {
+            margin-bottom: 4mm;
+        }
+
+        ul, ol {
+            margin-left: 5mm;
+            margin-bottom: 4mm;
+        }
+
+        li {
+            font-size: 10pt;
+            line-height: 1.4;
+            margin-bottom: 2mm;
+        }
+
+        .highlight {
+            background: #e8f0f7;
+            padding: 8mm;
+            border-radius: 4px;
+            border: 1px solid #b3d9ff;
+            margin: 5mm 0;
+        }
+
+        .key-point {
+            font-weight: 600;
+            color: #003366;
+        }
+
+        .footer {
+            background: #f0f4f8;
+            padding: 8mm;
+            border-radius: 4px;
+            font-size: 9pt;
+            text-align: center;
+            color: #666;
+            border-top: 2px solid #003366;
+        }
+
+        .methods-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5mm;
+            margin-bottom: 4mm;
+        }
+
+        .method-item {
+            background: #f9fbfc;
+            padding: 5mm;
+            border-radius: 4px;
+            font-size: 9.5pt;
+            line-height: 1.4;
+        }
+
+        .method-label {
+            font-weight: 600;
+            color: #003366;
+            margin-bottom: 2mm;
+        }
+
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .poster {
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                padding: 15mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-title">Are Genera Evolutionarily Real?</div>
+            <div class="header-subtitle">Evidence from the Phylogenetic Reconstruction of Solanaceae</div>
+            <div class="header-institution">University of Edinburgh · SBS PGR Symposium</div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="content">
+            <!-- Introduction Section -->
+            <div class="section">
+                <div class="section-title">🎯 Research Question</div>
+                <div class="section-content">
+                    <p>The genus is a fundamental unit in biological classification, yet its <span class="key-point">evolutionary reality remains uncertain</span>.</p>
+                    <p>Are genera:</p>
+                    <ul>
+                        <li><strong>Monophyletic units</strong> with evolutionary meaning?</li>
+                        <li><strong>Arbitrary classifications</strong> of continuous variation?</li>
+                    </ul>
+                    <div class="highlight">
+                        This study tests whether genera represent true evolutionary lineages using phylogenetic methods.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Methods Section -->
+            <div class="section">
+                <div class="section-title">🔬 Methodology</div>
+                <div class="section-content">
+                    <p><span class="key-point">Supermatrix Phylogenetic Approach:</span></p>
+                    <div class="methods-grid">
+                        <div class="method-item">
+                            <div class="method-label">Molecular Data</div>
+                            <div>9 nuclear and plastid loci</div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-label">Taxon Sampling</div>
+                            <div>1,581 → 2,000 species</div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-label">Data Curation</div>
+                            <div>GenBank sequences curated and aligned</div>
+                        </div>
+                        <div class="method-item">
+                            <div class="method-label">Analysis Method</div>
+                            <div>GMYC model assessment</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Study System Section -->
+            <div class="section">
+                <div class="section-title">🌿 Study System</div>
+                <div class="section-content">
+                    <p><span class="key-point">Solanaceae</span> (Nightshade Family):</p>
+                    <ul>
+                        <li>~2,000–3,000 described species</li>
+                        <li>~50–100 recognized genera</li>
+                        <li>Economically and medically important</li>
+                        <li>Phylogenetically diverse</li>
+                        <li>Ideal for testing genus delimitation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Expected Outcomes Section -->
+            <div class="section">
+                <div class="section-title">📊 Expected Outcomes</div>
+                <div class="section-content">
+                    <ul>
+                        <li>Determine if current genera are monophyletic clades</li>
+                        <li>Identify genera requiring phylogenetic revision</li>
+                        <li>Provide evidence-based genus delimitation framework</li>
+                        <li>Improve Solanaceae taxonomy and classification</li>
+                    </ul>
+                    <div class="highlight" style="margin-top: 5mm;">
+                        <span class="key-point">Goal:</span> Support monophyletic genera and inform phylogenetically focused delimitations
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            University of Edinburgh · School of Biological Sciences · PGR Research · May 2026
+        </div>
+    </div>
+</body>
+</html>
